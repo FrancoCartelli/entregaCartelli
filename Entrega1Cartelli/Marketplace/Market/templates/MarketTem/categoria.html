@@ -1,0 +1,26 @@
+{% extends "MarketTem/inicio.html" %}
+
+
+{% load static %}
+
+
+{% block contenidoQueCambia %}
+
+
+
+<h1>Categoria</h1>
+
+Ingresar un categoria:
+<br>
+<form action=""  method="post">{% csrf_token %}
+    <table>
+        {{miFormulario.as_table}}
+    </table>
+    <input type="submit",value="Enviar">
+</form>
+
+
+
+
+
+{% endblock %}

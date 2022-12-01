@@ -1,0 +1,27 @@
+{% extends "MarketTem/inicio.html" %}
+
+
+{% load static %}
+
+
+{% block contenidoQueCambia %}
+
+
+
+<h1>Productos</h1>
+
+
+Ingresar un producto:
+<br>
+<form action=""  method="post">{% csrf_token %}
+    <table>
+        {{miFormulario.as_table}}
+    </table>
+    <input type="submit",value="Enviar">
+</form>
+
+
+
+
+
+{% endblock %}
